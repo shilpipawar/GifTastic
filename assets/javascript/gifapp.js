@@ -46,21 +46,21 @@ $(document).ready(function () {
         return url;
     }
 
-    $("button").on("click", function () {
-        var name = $(this).attr("data-name");
-        var queryURL = createAPIURL(name);
+    function dispalyGifi(){
+        var animalname = $(this).attr("data-name");
+        var queryURL = createAPIURL(animalname);
 
-        console.log(name);
+        console.log(animalname);
         
         $.ajax({
             url: queryURL,
             method: "GET"
-        })
-            .then(function (response) {
+        }).then(function (response) {
                 var results = response.data;
-
                 for (var i = 0; i < results.length; i++) {
-                    var gifDiv = $("<div class='item'>");
+                    var gifDiv = $("<div>");
+                    gifDiv.addClass("item");
+                    gifDiv.addClass("col-sm-3");
 
                     var rating = results[i].rating;
 
@@ -75,7 +75,10 @@ $(document).ready(function () {
                     $("#gifs-appear-here").prepend(gifDiv);
                 }
             });
-    });
+    }//End displayGifi
+
+    // Generic function for displaying the movieInfo
+    $(document).on("click", ".animal", dispalyGifi);
 
     // Function for displaying the animal info
     // We're adding a click event listener to all elements with the class "animal"
