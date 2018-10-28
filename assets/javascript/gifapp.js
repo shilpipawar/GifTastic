@@ -4,8 +4,7 @@ $(document).ready(function () {
     var animals = ["Dog", "Cat", "Monkey", "Lion", "rabbits", "Bear", "Butterfly", "Camel", "Caribou", "Caterpillar",];
 
     var queryURL;
-
-
+    
     // Function for displaying animal data
     function renderButtons() {
         $("#buttons-view").empty();

@@ -15,63 +15,9 @@ h1 {
     text-shadow: 7px 7px 7px black;
 
 }
-h2 {
-    font-family: aliens-and-cows, sans-serif;
-    text-decoration: underline;
-    font-size: 25px;
-    color: rgb(39, 134, 163);
-    font-weight: bold;
-    padding: 25px;
-    text-align: center;
-    border-block-end-width: 5px;
-}
-ul.b {
-    list-style-type: square;
-}
-.contents
-{
-    clear: both;
-    position: relative;
-    left:15%;
-    padding: 30px;
-    border-radius:3px solid #7777;
-    background-color:rgb(24, 22, 22);
-    box-sizing: border-box; 
-	margin:20px;
-}
-
-.display
-{
-    position: fixed;
-    left:10%;
-    padding: 30px;
-    border-radius:3px solid #7777;
-    background-color:rgb(24, 22, 22);
-    /* background-image: url(../images/World-Map.jpg); */
-    color: rgb(15, 14, 1);
-    box-sizing: border-box; 
-    margin:20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: strong;
-    line-height: 40px;
-
-}
 .wrapper
 {
     width: 960px;
     margin:0 auto 0 auto;
-    padding: 10px;
-}
-
-.footer {
-    clear: both;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:rgb(39, 134, 163);
-    color: #ffffff;
-    text-align: center;
     padding: 10px;
 }
